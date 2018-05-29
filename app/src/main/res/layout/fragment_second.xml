@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".second">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/first"
+            android:layout_width="135dp"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/second"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="18sp"
+
+                android:text="Semester" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/sem1"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+
+                android:layout_margin="5.5dp"
+                android:padding="12dp"
+                android:text="Semester 1"
+                android:textAppearance="@android:style/TextAppearance.Holo.Small"
+                android:textStyle="bold"
+                tools:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/sem2"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+
+                android:layout_margin="5.5dp"
+                android:padding="12dp"
+                android:text="Semester 2"
+                android:textAppearance="@android:style/TextAppearance.Holo.Small"
+                android:textStyle="bold"
+                tools:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/sem3"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+
+                android:layout_margin="5.5dp"
+                android:padding="12dp"
+                android:text="Semester 3"
+                android:textAppearance="@android:style/TextAppearance.Holo.Small"
+                android:textStyle="bold"
+                tools:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/sem4"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+
+                android:layout_margin="5.5dp"
+                android:padding="12dp"
+                android:text="Semester 4"
+                android:textAppearance="@android:style/TextAppearance.Holo.Small"
+                android:textStyle="bold"
+                tools:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/semtot"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+
+                android:layout_margin="5.5dp"
+                android:padding="12dp"
+                android:text="CGPA with %"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="?attr/colorPrimary"
+                android:textStyle="bold"
+                tools:layout_height="wrap_content" />
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/second"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="1.5dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:text="Enter SGPA" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:background="#000000" />
+
+
+            <EditText
+                android:id="@+id/e_sem1"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="2.5dp"
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+
+                android:padding="10dp"
+                android:selectAllOnFocus="true"
+
+
+                />
+
+            <EditText
+                android:id="@+id/e_sem2"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="4.5dp"
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+                android:padding="10dp"
+                android:selectAllOnFocus="true"
+
+
+                />
+
+            <EditText
+                android:id="@+id/e_sem3"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="4.5dp"
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+                android:padding="10dp"
+                android:selectAllOnFocus="true"
+
+
+                />
+            <EditText
+                android:id="@+id/e_sem4"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:maxLength="5"
+                android:layout_gravity="center"
+                android:layout_margin="4.5dp"
+                android:inputType="numberDecimal"
+                android:padding="10dp"
+                android:selectAllOnFocus="true"
+
+
+                />
+
+            <TextView
+                android:id="@+id/e_sem_total"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:layout_margin="5.0dp"
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+                android:padding="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="?attr/colorPrimary"
+
+                android:textStyle="bold"
+
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/third"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="1.5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="10dp"
+
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="18sp"
+
+                android:text="Percentage" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:background="#000000" />
+
+
+            <TextView
+                android:id="@+id/e_per1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:layout_margin="1.6dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:maxLength="5"
+                android:text="0.0"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+            <TextView
+                android:id="@+id/e_per2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:layout_margin="4.7dp"
+                android:gravity="center"
+                android:maxLength="5"
+                android:padding="10dp"
+                android:text="0.0"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+            <TextView
+                android:id="@+id/e_per3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:layout_margin="4.7dp"
+                android:gravity="center"
+                android:maxLength="5"
+                android:padding="10dp"
+                android:text="0.0"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:id="@+id/e_per4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:layout_margin="4.7dp"
+                android:gravity="center"
+                android:maxLength="5"
+                android:padding="10dp"
+                android:text="0.0"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+            <TextView
+                android:id="@+id/per_total"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:layout_margin="6.4dp"
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+                android:padding="10dp"
+                android:text="0.0"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="?attr/colorPrimary"
+
+                android:textStyle="bold"
+
+
+                />
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/result_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="false"
+            android:layout_below="@+id/second"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/calc"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal|center"
+
+                android:text="@string/calc" />
+            <Button
+                android:id="@+id/res"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal|center"
+
+                android:text="@string/res" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</FrameLayout>
