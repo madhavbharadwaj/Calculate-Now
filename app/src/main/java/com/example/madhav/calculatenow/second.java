@@ -4,6 +4,7 @@ package com.example.madhav.calculatenow;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -166,10 +167,10 @@ public class second extends Fragment {
         if(!e1text001.isEmpty())
             eval1= Double.parseDouble(e1text001);
 
-        String stringdouble1= Double.toString((eval1 * 9.5));
+        String stringdouble1= Double.toString((eval1 - 0.75)*10);
+        Log.d("lol",stringdouble1);
 
-
-        if (Double.parseDouble(stringdouble1) >  100)
+        if (Double.parseDouble(stringdouble1) >  100 || Double.parseDouble(stringdouble1) < 0)
             eper1.setText( "0.0" );
         else {
             eper1.setText(stringdouble1);
@@ -181,9 +182,9 @@ public class second extends Fragment {
         if(!e2text002.isEmpty())
             eval2= Double.parseDouble(e2text002);
 
-        String stringdouble2= Double.toString(eval2 * 9.5);
+        String stringdouble2= Double.toString((eval2 - 0.75) *  10);
 
-        if (Double.parseDouble(stringdouble2) >  100)
+        if (Double.parseDouble(stringdouble2) >  100 || Double.parseDouble(stringdouble2) < 0)
             eper2.setText( "0.0" );
         else
 
@@ -193,8 +194,8 @@ public class second extends Fragment {
         if(!e3text003.isEmpty())
             eval3= Double.parseDouble(e3text003);
 
-        String stringdouble3= Double.toString(eval3 * 9.5);
-        if (Double.parseDouble(stringdouble3) >  100)
+        String stringdouble3= Double.toString((eval3 - 0.75) *  10);
+        if (Double.parseDouble(stringdouble3) >  100 || Double.parseDouble(stringdouble3) < 0)
             eper3.setText( "0.0" );
         else
             eper3.setText( stringdouble3 );
@@ -203,8 +204,8 @@ public class second extends Fragment {
         if(!e4text004.isEmpty())
             eval4= Double.parseDouble(e4text004);
 
-        String stringdouble4= Double.toString(eval4 * 9.5);
-        if (Double.parseDouble(stringdouble4) >  100)
+        String stringdouble4= Double.toString((eval4 - 0.75) *  10);
+        if (Double.parseDouble(stringdouble4) >  100 || Double.parseDouble(stringdouble4) < 0)
             eper4.setText( "0.0" );
         else {
             eper4.setText(stringdouble4);
@@ -241,7 +242,7 @@ public class second extends Fragment {
         else
         {
             esemt.setText( String.valueOf(s));
-            pertotal.setText( String.valueOf(Double.toString(s * 9.5)) );
+            pertotal.setText( String.valueOf(Double.toString((s - 0.75) * 10)) );
 
         }
     }
